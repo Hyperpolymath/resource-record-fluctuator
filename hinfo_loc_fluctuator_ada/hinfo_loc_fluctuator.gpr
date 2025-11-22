@@ -1,0 +1,80 @@
+--  GNAT Project File for HINFO-LOC Fluctuator
+--  Configured for maximum security and safety
+
+project HINFO_Loc_Fluctuator is
+
+   for Source_Dirs use ("src");
+   for Object_Dir use "obj";
+   for Exec_Dir use "bin";
+   for Main use ("main.adb");
+
+   type Build_Mode_Type is ("debug", "release", "prove");
+   Build_Mode : Build_Mode_Type := external ("BUILD_MODE", "debug");
+
+   --  Common compiler flags for all build modes
+   --  These security flags are ALWAYS enabled
+   Common_Flags := (
+      "-gnatwa",       --  Enable all standard warnings
+      "-gnatwe",       --  Treat warnings as errors
+      "-gnatyy",       --  Default style checks
+      "-gnato",        --  Enable overflow checking (CRITICAL FOR SECURITY)
+      "-fstack-check", --  Stack overflow checking
+      "-gnatVa",       --  Validity checking for all data
+      "-gnatf",        --  Full errors (don't stop after first error)
+      "-gnat2012"      --  Use Ada 2012 standard
+   );
+
+   package Compiler is
+      case Build_Mode is
+         when "debug" =>
+            for Default_Switches ("Ada") use Common_Flags & (
+               "-g",         --  Debug symbols
+               "-O0",        --  No optimization
+               "-gnata"      --  Enable assertions
+            );
+
+         when "release" =>
+            for Default_Switches ("Ada") use Common_Flags & (
+               "-O2",        --  Optimize for speed
+               "-gnatn",     --  Enable inlining
+               "-gnata"      --  Keep assertions even in release!
+            );
+
+         when "prove" =>
+            --  SPARK mode for formal verification
+            for Default_Switches ("Ada") use Common_Flags & (
+               "-g",
+               "-O0",
+               "-gnata",
+               "-gnatd.F"    --  SPARK mode
+            );
+      end case;
+   end Compiler;
+
+   package Binder is
+      for Default_Switches ("Ada") use ("-Es");  --  Store symbolic traceback
+   end Binder;
+
+   package Linker is
+      case Build_Mode is
+         when "debug" | "prove" =>
+            for Default_Switches ("Ada") use ("-g");
+         when "release" =>
+            for Default_Switches ("Ada") use ("");
+      end case;
+   end Linker;
+
+   package Builder is
+      for Default_Switches ("Ada") use ("-j0", "-s");  --  Parallel build, silent
+   end Builder;
+
+   --  SPARK verification settings (optional)
+   package Prove is
+      for Proof_Switches ("Ada") use (
+         "--level=0",        --  Basic proof level
+         "--prover=cvc4",    --  Use CVC4 prover
+         "--timeout=10"      --  10 second timeout per proof
+      );
+   end Prove;
+
+end HINFO_Loc_Fluctuator;

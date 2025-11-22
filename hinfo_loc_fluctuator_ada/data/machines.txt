@@ -1,0 +1,84 @@
+# CPU/Machine Types for HINFO Records
+# Format: One entry per line, # for comments
+# Source: Historical and modern CPU architectures
+
+# x86/AMD64 Processors
+Intel-8086
+Intel-80286
+Intel-80386
+Intel-80486
+Intel-Pentium
+Intel-Pentium-Pro
+Intel-Pentium-II
+Intel-Pentium-III
+Intel-Pentium-4
+Intel-Core-2-Duo
+Intel-Core-i3
+Intel-Core-i5
+Intel-Core-i7
+Intel-Core-i9
+Intel-Xeon
+AMD-K6
+AMD-Athlon
+AMD-Athlon-64
+AMD-Opteron
+AMD-Ryzen-3
+AMD-Ryzen-5
+AMD-Ryzen-7
+AMD-Ryzen-9
+AMD-EPYC
+
+# ARM Processors
+ARM-Cortex-A7
+ARM-Cortex-A53
+ARM-Cortex-A57
+ARM-Cortex-A72
+ARM-Cortex-A76
+ARM-Cortex-X1
+Apple-M1
+Apple-M1-Pro
+Apple-M1-Max
+Apple-M2
+Qualcomm-Snapdragon-888
+Qualcomm-Snapdragon-8-Gen-2
+
+# RISC Processors
+SPARC-V9
+UltraSPARC-III
+MIPS-R3000
+MIPS-R4000
+MIPS-R10000
+PowerPC-G3
+PowerPC-G4
+PowerPC-G5
+IBM-POWER8
+IBM-POWER9
+IBM-POWER10
+
+# Historical/Legacy
+DEC-Alpha-21164
+DEC-Alpha-21264
+DEC-VAX-11/780
+Motorola-68000
+Motorola-68020
+Motorola-68030
+Motorola-68040
+
+# Embedded/IoT
+ESP8266
+ESP32
+Raspberry-Pi-ARM
+Arduino-ATmega328
+STM32F4
+
+# Quantum (for amusement)
+D-Wave-Quantum
+IBM-Q-System-One
+Google-Sycamore
+
+# Fictional (for honeypot obfuscation)
+Quantum-Flux-Capacitor-2000
+Hyperdimensional-CPU-X
+Neural-Matrix-Processor
+Temporal-Computing-Unit
+Bio-Synthetic-CPU

@@ -1,0 +1,65 @@
+# Geographic Locations for LOC Records
+# Format: latitude,longitude,altitude_meters,description
+# Latitude: -90 to +90 (South to North)
+# Longitude: -180 to +180 (West to East)
+# Altitude: meters above WGS84 ellipsoid
+
+# Major Data Center Locations
+37.7749,-122.4194,16,San Francisco Data Center
+40.7128,-74.0060,10,New York City Data Center
+51.5074,-0.1278,11,London Data Center
+35.6762,139.6503,40,Tokyo Data Center
+-33.8688,151.2093,58,Sydney Data Center
+1.3521,103.8198,15,Singapore Data Center
+52.5200,13.4050,34,Berlin Data Center
+48.8566,2.3522,35,Paris Data Center
+55.7558,37.6173,156,Moscow Data Center
+-23.5505,-46.6333,760,São Paulo Data Center
+
+# Cloud Provider Regions
+47.6062,-122.3321,56,Seattle AWS us-west-2
+39.0438,-77.4879,89,Ashburn AWS us-east-1
+53.3498,-6.2603,20,Dublin AWS eu-west-1
+22.3964,114.1095,7,Hong Kong AWS ap-east-1
+-37.8136,144.9631,31,Melbourne AWS ap-southeast-4
+
+# Exotic/Interesting Locations
+64.1466,-21.9426,35,Reykjavik Iceland
+-54.8019,-68.3030,12,Ushuaia Patagonia
+78.2232,15.6267,8,Longyearbyen Svalbard
+-0.1807,-78.4678,2850,Quito Ecuador
+-77.8500,166.6667,10,McMurdo Antarctica
+
+# Geographic Extremes
+90.0000,0.0000,0,North Pole (Quantum Superposition)
+-90.0000,0.0000,2835,South Pole (Amundsen-Scott Station)
+-25.3444,131.0369,348,Uluru Australia
+27.9881,86.9250,8848,Mount Everest Summit
+-11.0041,-69.5897,3650,Lake Titicaca
+
+# Tech Hubs
+37.3861,-122.0839,20,Mountain View Google HQ
+47.6426,-122.1407,130,Redmond Microsoft Campus
+30.2672,-97.7431,149,Austin Tech Hub
+45.5017,-73.5673,36,Montreal AI Hub
+59.3293,18.0686,28,Stockholm Startup Scene
+
+# Unusual Locations (for obfuscation)
+25.7617,-80.1918,2,Miami Underwater Data Center
+71.2906,-156.7886,5,Prudhoe Bay Arctic
+-12.0464,-77.0428,154,Lima Peru
+13.7563,100.5018,2,Bangkok Thailand
+41.9028,12.4964,21,Rome Vatican
+
+# Strategic Locations
+38.8977,-77.0365,7,Washington DC Pentagon
+49.2827,-123.1207,70,Vancouver Canada
+-25.7479,28.2293,1753,Pretoria South Africa
+-41.2865,174.7762,13,Wellington New Zealand
+21.3099,-157.8581,5,Honolulu Hawaii
+
+# Fictional/Amusing (for quantum server effect)
+0.0000,0.0000,0,Null Island
+51.1657,-1.8262,110,Stonehenge UK
+25.7467,-80.2558,0,Bermuda Triangle
+37.2352,-115.8111,1341,Area 51 Nevada

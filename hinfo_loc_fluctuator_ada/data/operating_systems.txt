@@ -1,0 +1,101 @@
+# Operating Systems for HINFO Records
+# Format: One entry per line, # for comments
+# Source: Historical and modern operating systems
+
+# Unix/Linux Distributions
+Linux-Kernel-6.x
+Debian-12-Bookworm
+Debian-11-Bullseye
+Ubuntu-23.10-Mantic
+Ubuntu-22.04-LTS-Jammy
+Ubuntu-20.04-LTS-Focal
+Fedora-39
+Fedora-38
+RHEL-9
+RHEL-8
+CentOS-Stream-9
+Rocky-Linux-9
+AlmaLinux-9
+Arch-Linux
+Gentoo-Linux
+Slackware-15
+openSUSE-Tumbleweed
+openSUSE-Leap-15
+Kali-Linux-2023
+Alpine-Linux-3.18
+
+# BSD Family
+FreeBSD-14.0
+FreeBSD-13.2
+OpenBSD-7.4
+NetBSD-10.0
+DragonFly-BSD-6.4
+
+# Commercial Unix
+Solaris-11.4
+Oracle-Solaris-11
+HP-UX-11i
+AIX-7.3
+IRIX-6.5
+
+# Windows
+Windows-Server-2022
+Windows-Server-2019
+Windows-Server-2016
+Windows-11-Pro
+Windows-10-Enterprise
+Windows-8.1
+Windows-7-SP1
+Windows-Vista
+Windows-XP-SP3
+Windows-2000
+Windows-NT-4.0
+Windows-95
+MS-DOS-6.22
+
+# macOS/Classic Mac
+macOS-14-Sonoma
+macOS-13-Ventura
+macOS-12-Monterey
+macOS-11-Big-Sur
+macOS-10.15-Catalina
+Mac-OS-X-10.6-Snow-Leopard
+Mac-OS-9
+System-7
+
+# Mobile
+Android-14
+Android-13
+iOS-17
+iOS-16
+HarmonyOS-4
+
+# Historical/Legacy
+VMS-8.4
+TOPS-20
+Multics
+OS/2-Warp-4
+BeOS-R5
+AmigaOS-4.1
+RISC-OS-5
+
+# Embedded/Real-Time
+FreeRTOS-10.5
+VxWorks-7
+QNX-Neutrino-7.1
+Embedded-Linux-RT
+
+# Quantum/Experimental (for amusement)
+TempleOS
+Redox-OS
+Haiku-R1
+ReactOS-0.4
+
+# Fictional (for honeypot obfuscation)
+Quantum-OS-X
+HyperSpace-Operating-System
+Neural-Net-OS-2049
+Temporal-Computing-Platform
+Bio-Synthetic-OS
+Multiverse-OS
+Zero-Point-Energy-OS
