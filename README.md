@@ -1,4 +1,4 @@
-# [enhanced] DNS Fluctuator™
+# [quantum (sic)] DNS Fluctuator
 
 DNS record randomization tool for deprecated HINFO and LOC records. Built with Ada for maximum security and type safety.
 
