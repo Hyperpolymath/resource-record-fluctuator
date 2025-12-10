@@ -1,0 +1,36 @@
+= resource-record-fluctuator - Citation Guide
+:toc:
+
+== BibTeX
+
+[source,bibtex]
+----
+@software{resource-record-fluctuator_2025,
+  author = {Polymath, Hyper},
+  title = {resource-record-fluctuator},
+  year = {2025},
+  url = {https://github.com/hyperpolymath/resource-record-fluctuator},
+  license = {AGPL-3.0-or-later}
+}
+----
+
+== Harvard Style
+
+Polymath, H. (2025) _resource-record-fluctuator_ [Computer software]. Available at: https://github.com/hyperpolymath/resource-record-fluctuator
+
+== OSCOLA
+
+Hyper Polymath, 'resource-record-fluctuator' (2025) <https://github.com/hyperpolymath/resource-record-fluctuator>
+
+== MLA
+
+Polymath, Hyper. "resource-record-fluctuator." 2025, github.com/hyperpolymath/resource-record-fluctuator.
+
+== APA 7
+
+Polymath, H. (2025). _resource-record-fluctuator_ [Computer software]. GitHub. https://github.com/hyperpolymath/resource-record-fluctuator
+
+== See Also
+
+* link:../CITATION.cff[CITATION.cff]
+* link:../codemeta.json[codemeta.json]

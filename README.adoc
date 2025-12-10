@@ -1,25 +1,25 @@
-# [quantum (sic)] DNS Fluctuator
+= [quantum (sic)] DNS Fluctuator
 
 DNS record randomization tool for deprecated HINFO and LOC records. Built with Ada for maximum security and type safety.
 
-## 🎯 Purpose
+== 🎯 Purpose
 
-Make your server appear to exist in **quantum superposition** - simultaneously as different hardware in multiple locations!
+Make your server appear to exist in *quantum superposition* - simultaneously as different hardware in multiple locations!
 
-**Serious Uses:**
+*Serious Uses:*
 - Honeypot obfuscation (make honeypots appear to move)
 - Attack response and deception
 - Privacy enhancement for public DNS records
 - Security research and education
 
-**Amusing Uses:**
+*Amusing Uses:*
 - "Quantum Server" demonstrations
 - Confuse network reconnaissance tools
 - DNS record experiments
 
-**Why deprecated records?** HINFO and LOC are deprecated per RFC 8482, making them perfect for experimental security techniques without affecting production services.
+*Why deprecated records?* HINFO and LOC are deprecated per RFC 8482, making them perfect for experimental security techniques without affecting production services.
 
-## 📁 Project Structure
+== 📁 Project Structure
 
 ```
 resource-record-fluctuator/
@@ -38,83 +38,83 @@ resource-record-fluctuator/
 └── README.md                      This file
 ```
 
-## 🚀 Quick Start
+== 🚀 Quick Start
 
-### For Users (Ada Implementation)
+=== For Users (Ada Implementation)
 
 ```bash
-# Navigate to Ada implementation
+= Navigate to Ada implementation
 cd hinfo_loc_fluctuator_ada
 
-# Build
+= Build
 make
 
-# Run
+= Run
 ./bin/hinfo_loc_fluctuator
 ```
 
-**Demo Credentials:**
+*Demo Credentials:*
 - `admin` / any password (full access)
 - `user` / any password (read-only)
 - `operator` / any password (local modifications)
 
-**⚠️  WARNING: Demo credentials only! Change before production use!**
+*⚠️  WARNING: Demo credentials only! Change before production use!*
 
 See [hinfo_loc_fluctuator_ada/README.md](hinfo_loc_fluctuator_ada/README.md) for complete documentation.
 
-### For Developers
+=== For Developers
 
 ```bash
-# Build in debug mode
+= Build in debug mode
 cd hinfo_loc_fluctuator_ada
 make debug
 
-# Build with optimizations (safety checks still enabled!)
+= Build with optimizations (safety checks still enabled!)
 make release
 
-# Run SPARK formal verification (if SPARK installed)
+= Run SPARK formal verification (if SPARK installed)
 make verify
 
-# See all options
+= See all options
 make help
 ```
 
-## ✨ Features
+== ✨ Features
 
-### Core Features ✅
+=== Core Features ✅
 
-**Original HINFO/LOC Fluctuation:**
+*Original HINFO/LOC Fluctuation:*
 - Type-safe HINFO (CPU + OS) and LOC (geographic) records
 - Compile-time bounds checking (latitude, longitude, altitude, TTL)
 - Random record generation from data pools (68 CPUs, 77 OSes, 52 locations)
 - "Quantum Server" mode (simultaneous HINFO + LOC)
 
-**Security & Access Control:**
+*Security & Access Control:*
 - Permission system (None → Read-Only → Modify-Local → Modify-Remote → Admin)
 - Session management with 30-minute timeout
 - Constant-time password comparison (timing attack prevention)
 - Replay attack detection
 - Comprehensive audit logging
 
-**Infrastructure:**
+*Infrastructure:*
 - BIND-format zone file writer
 - Scheduled auto-fluctuation (Ada tasking)
 - INI-style configuration files
 - Thread-safe logging system
 - Interactive TUI with ANSI colors
 
-**Data:**
+*Data:*
 - 68 CPU types (Intel, AMD, ARM, historical, fictional)
 - 77 operating systems (Linux, BSD, Windows, Unix, fictional)
 - 52 geographic locations (data centers, exotic locations, fictional)
 
-### Enterprise Features ✅ 🆕
+=== Enterprise Features ✅ 🆕
 
-**⭐ NEW: Comprehensive DNS Security Platform**
+*⭐ NEW: Comprehensive DNS Security Platform*
 
 The project has been massively expanded into an enterprise-grade DNS security and infrastructure management platform! See [ENTERPRISE_FEATURES.md](hinfo_loc_fluctuator_ada/docs/ENTERPRISE_FEATURES.md) for full details.
 
-**Extended DNS Records (ALL types):**
+*Extended DNS Records (ALL types):*
 - Basic: A, AAAA, PTR, NS, CNAME
 - Mail: MX, SPF, DKIM, DMARC
 - Security: CAA, TLSA (DANE), SSHFP, APL (CIDR access control)
@@ -124,24 +124,24 @@ The project has been massively expanded into an enterprise-grade DNS security an
 - DNS topology: Standard, Split-Horizon, Primary-Primary, Hidden-Primary
 - AXFR (zone transfer) with TSIG authentication
 
-**Firewall Integration (firewalld/iptables/nftables/pf):**
+*Firewall Integration (firewalld/iptables/nftables/pf):*
 - Time-based maintenance windows with IP restrictions
-- **Port rotation** (SSH/services on schedule - maintainers calculate offline)
+- *Port rotation* (SSH/services on schedule - maintainers calculate offline)
 - Service scheduling (MX, RSS, NNTP with time windows)
 - Stateful vs stateless firewall rules
 - Port knocking support
 - IPv4/IPv6 firewall toggle
 - Emergency lockdown/recovery modes
 
-**Security Headers & Obfuscation:**
+*Security Headers & Obfuscation:*
 - Server header obfuscation (Hidden, Obfuscated, Diagnostic modes)
 - X-Powered-By hiding
-- **Diagnostic mode** (expose real stack only to authorized IPs with secret token)
+- *Diagnostic mode* (expose real stack only to authorized IPs with secret token)
 - All security headers: HSTS, CSP (with nonces), X-Frame-Options, Referrer-Policy, Permissions-Policy
 - Experimental: COEP, COOP, CORP, Expect-CT, NEL
 - Integration with HINFO for consistent fake stack across DNS+HTTP
 
-**Software-Defined Perimeter (Zero-Trust):**
+*Software-Defined Perimeter (Zero-Trust):*
 - CSA SDP architecture implementation
 - Single Packet Authorization (SPA) with AES-256-GCM encryption
 - Zero-trust access control (default deny all)
@@ -151,16 +151,16 @@ The project has been massively expanded into an enterprise-grade DNS security an
 - Session management with automatic firewall cleanup
 - Trust levels: Untrusted → Device Verified → User Authenticated → Posture Valid → Full Trust
 
-**Protocol Management (Modern alternatives to SNMP):**
-- **NETCONF** (RFC 6241) - Recommended secure management
-- **RESTCONF** (RFC 8040) - RESTful API over HTTPS
-- **gNMI** - Modern gRPC-based management
+*Protocol Management (Modern alternatives to SNMP):*
+- *NETCONF* (RFC 6241) - Recommended secure management
+- *RESTCONF* (RFC 8040) - RESTful API over HTTPS
+- *gNMI* - Modern gRPC-based management
 - Prometheus/OpenMetrics for metrics export
 - SNMP v1/v2c/v3 (with security warnings, disabled by default)
 - TLS/mTLS for all management protocols
 - Rate limiting and SDP integration
 
-**Master Configuration System:**
+*Master Configuration System:*
 - Deployment modes: Development, Staging, Production, Honeypot, Research
 - Configuration profiles with validation
 - YAML/JSON import/export
@@ -168,68 +168,68 @@ The project has been massively expanded into an enterprise-grade DNS security an
 - Emergency configurations (lockdown, recovery, minimal-safe)
 - Migration tools and compatibility checking
 
-**Key Enterprise Capabilities:**
-1. **SSH port rotation**: Port changes on schedule, maintainers calculate offline
-2. **Service scheduling**: Accept mail/RSS/NNTP only during specific windows
-3. **Zero-trust SDP**: All ports closed, opened only after authentication
-4. **Stack obfuscation**: Consistent fake stack across DNS (HINFO) and HTTP headers
-5. **Maintainer diagnostics**: Real stack info with secret token for troubleshooting
+*Key Enterprise Capabilities:*
+1. *SSH port rotation*: Port changes on schedule, maintainers calculate offline
+2. *Service scheduling*: Accept mail/RSS/NNTP only during specific windows
+3. *Zero-trust SDP*: All ports closed, opened only after authentication
+4. *Stack obfuscation*: Consistent fake stack across DNS (HINFO) and HTTP headers
+5. *Maintainer diagnostics*: Real stack info with secret token for troubleshooting
 
-### Not Yet Implemented ❌
+=== Not Yet Implemented ❌
 
 - DNS UPDATE (RFC 2136) - framework exists, needs wire format encoding
 - TSIG authentication (RFC 2845) - placeholder implementation
 - Production crypto (bcrypt/Argon2) - currently uses demo hashes
 - SPARK formal verification proofs - code structured for it
 
-## 🛡️ Security
+== 🛡️ Security
 
-### Why Ada?
+=== Why Ada?
 
 Original conversation:
-> **User:** "I'm concerned about security since this modifies DNS infrastructure."
-> **Response:** "You're absolutely right. Let's use Ada instead."
+> *User:* "I'm concerned about security since this modifies DNS infrastructure."
+> *Response:* "You're absolutely right. Let's use Ada instead."
 
-**Ada Security Advantages:**
-- **No buffer overflows** - memory safety by design
-- **Compile-time bounds checking** - `type Latitude_Degrees is delta 0.000001 range -90.0 .. 90.0;`
-- **Overflow checking** - always enabled, even in release builds (`-gnato`)
-- **Stack checking** - prevents stack overflow (`-fstack-check`)
-- **Formal verification** - SPARK can mathematically prove correctness
+*Ada Security Advantages:*
+- *No buffer overflows* - memory safety by design
+- *Compile-time bounds checking* - `type Latitude_Degrees is delta 0.000001 range -90.0 .. 90.0;`
+- *Overflow checking* - always enabled, even in release builds (`-gnato`)
+- *Stack checking* - prevents stack overflow (`-fstack-check`)
+- *Formal verification* - SPARK can mathematically prove correctness
 
-### Elixir Prototype?
+=== Elixir Prototype?
 
-An initial Elixir prototype exists in `hinfo_loc_fluctuator/` but is **NOT recommended**. See [hinfo_loc_fluctuator/README.md](hinfo_loc_fluctuator/README.md) for why Ada was chosen instead.
+An initial Elixir prototype exists in `hinfo_loc_fluctuator/` but is *NOT recommended*. See [hinfo_loc_fluctuator/README.md](hinfo_loc_fluctuator/README.md) for why Ada was chosen instead.
 
 TL;DR: DNS is critical infrastructure. Ada's compile-time safety > Elixir's runtime convenience.
 
-## 📖 Use Cases
+== 📖 Use Cases
 
 See [hinfo_loc_fluctuator_ada/docs/USE_CASES.md](hinfo_loc_fluctuator_ada/docs/USE_CASES.md) for detailed scenarios:
 
-1. **Honeypot Obfuscation** - Make honeypots appear to physically move
-2. **Incident Response** - Confuse attackers during active response
-3. **Security Research** - Teach DNS reconnaissance countermeasures
-4. **Privacy Enhancement** - Obscure public server locations
-5. **Testing** - Simulate multi-region deployments without cost
-6. **Demos** - "Quantum Server" presentations
+1. *Honeypot Obfuscation* - Make honeypots appear to physically move
+2. *Incident Response* - Confuse attackers during active response
+3. *Security Research* - Teach DNS reconnaissance countermeasures
+4. *Privacy Enhancement* - Obscure public server locations
+5. *Testing* - Simulate multi-region deployments without cost
+6. *Demos* - "Quantum Server" presentations
 
-## 🔧 Technical Details
+== 🔧 Technical Details
 
-### DNS Records
+=== DNS Records
 
-**HINFO (Host Information) - RFC 1035:**
+*HINFO (Host Information) - RFC 1035:*
 - CPU field: Hardware/architecture
 - OS field: Operating system
 - Deprecated per RFC 8482 (intentional!)
 
-**LOC (Location) - RFC 1876:**
+*LOC (Location) - RFC 1876:*
 - Latitude/Longitude in decimal degrees
 - Altitude above WGS84 ellipsoid
 - Size and precision fields
 - Deprecated per RFC 8482 (intentional!)
 
-### Type Safety Example
+=== Type Safety Example
 
 ```ada
 -- Compile-time guarantee: latitude CANNOT be out of range
@@ -242,7 +242,7 @@ Bad_Lat : Latitude_Degrees := 100.0;  -- COMPILE ERROR!
 -- Elixir/Python/etc. would need runtime check (can be bypassed)
 ```
 
-### Build Modes
+=== Build Modes
 
 ```bash
 make debug     # No optimization, debug symbols, assertions
@@ -250,11 +250,11 @@ make release   # Optimized, but safety checks STILL ENABLED
 make prove     # SPARK formal verification mode
 ```
 
-**Security note:** Overflow checking (`-gnato`) and stack checking (`-fstack-check`) are ALWAYS enabled, even in release builds. This is non-negotiable for DNS security.
+*Security note:* Overflow checking (`-gnato`) and stack checking (`-fstack-check`) are ALWAYS enabled, even in release builds. This is non-negotiable for DNS security.
 
-## 📋 Roadmap
+== 📋 Roadmap
 
-### ✅ Completed (Phase 1-3)
+=== ✅ Completed (Phase 1-3)
 - Core DNS types and validation
 - Authentication and authorization
 - Randomization engine with CSV parser
@@ -264,73 +264,73 @@ make prove     # SPARK formal verification mode
 - Scheduled fluctuation
 - Comprehensive documentation
 
-### 🚧 In Progress (Phase 4)
+=== 🚧 In Progress (Phase 4)
 - DNS UPDATE wire format encoding
 - TSIG authentication implementation
 - Production password hashing
 
-### 📅 Planned (Phase 5)
+=== 📅 Planned (Phase 5)
 - SPARK formal verification proofs
 - Unit test suite
 - Ncurses-based enhanced TUI
 - API/webhook triggers
 - Security audit
 
-## ⚖️ Legal & Ethical
+== ⚖️ Legal & Ethical
 
-**Authorized Use Only:**
+*Authorized Use Only:*
 - Authorized penetration testing
 - Your own infrastructure
 - Research networks and labs
 - Honeypot deployments
 - Educational demonstrations
 
-**Do NOT Use For:**
+*Do NOT Use For:*
 - Unauthorized DNS modification
 - Defrauding users about service location
 - Violating DNS provider ToS
 - Compliance violations (GDPR, HIPAA, etc.)
 
-**Always:**
+*Always:*
 - Obtain proper authorization
 - Document your use
 - Comply with local laws
 - Consider ethical implications
 
-## 📄 License
+== 📄 License
 
 MIT License - see [LICENSE](LICENSE) file.
 
-**Additional Security Disclaimer:** This software modifies DNS infrastructure. Use only with proper authorization. Demo credentials and simplified crypto MUST be replaced for production use.
+*Additional Security Disclaimer:* This software modifies DNS infrastructure. Use only with proper authorization. Demo credentials and simplified crypto MUST be replaced for production use.
 
-## 🙏 Acknowledgments
+== 🙏 Acknowledgments
 
 - RFCs 1034, 1035, 1876, 2136, 2845, 8482
 - Ada community for security-focused design
 - GNAT compiler team
 - Users who prioritize security over convenience
 
-## 📞 Contact
+== 📞 Contact
 
 [Add your contact information or GitHub profile]
 
 ---
 
-## Fun Example
+== Fun Example
 
 ```bash
 $ dig quantum.example.com HINFO
 quantum.example.com. 300 IN HINFO "Intel-Xeon" "Ubuntu-22.04"
 
-# Wait 30 seconds...
+= Wait 30 seconds...
 
 $ dig quantum.example.com HINFO
 quantum.example.com. 300 IN HINFO "ARM-Cortex-A72" "Alpine-Linux"
 
-# The server exists in quantum superposition! 🐱⚛️
+= The server exists in quantum superposition! 🐱⚛️
 ```
 
-**Remember:** Schrödinger's server is both running AND not running until observed. Our server is both Intel AND ARM until queried!
+*Remember:* Schrödinger's server is both running AND not running until observed. Our server is both Intel AND ARM until queried!
 
 ---
 

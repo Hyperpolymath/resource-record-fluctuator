@@ -1,0 +1,7 @@
+;; resource-record-fluctuator - Guix Channel
+;; Add to ~/.config/guix/channels.scm
+
+(channel
+ (version 0)
+ (url "https://github.com/hyperpolymath/resource-record-fluctuator")
+ (branch "main"))
